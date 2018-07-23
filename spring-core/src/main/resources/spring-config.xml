@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean name="ent" class="com.higgsup.Entitlement">
+        <property name="name" value="Entitlement"/>
+        <property name="time" value="50"/>
+    </bean>
+    <bean name="stud" class="com.higgsup.Student">
+        <property name="id" value="1"/>
+        <property name="name" value="Anhvv"/>
+    </bean>
+    <alias name="ent" alias="alias_ent"/>
+    <alias name="stud" alias="alias_stud"/>
+    <bean name="clientServiceConstructor" class="com.higgsup.service.ClientServiceImpl"/>
+    <bean name="clientServiceFactoryStatic" class="com.higgsup.service.ClientServiceImpl"
+          factory-method="createInstance"/>
+    <bean name="defaultServiceLocator" class="com.higgsup.service.DefaultServiceLocator"/>
+    <bean name="clientServiceFactoryInstance" factory-bean="defaultServiceLocator"
+          factory-method="createClientServiceInstance"/>
+</beans>

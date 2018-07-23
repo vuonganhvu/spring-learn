@@ -25,7 +25,5 @@
 hs_err_pid*
 
 .idea/
-non-blocking-rest/non-blocking-rest/target/
-non-blocking-rest/target/
 *.iml
 /**/target

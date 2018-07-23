@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <bean name="injectionConstructor" class="com.higgsup.dependencies.InjectionConstructor">
+        <constructor-arg name="yearsXXX" value="27"/>
+        <constructor-arg name="ultimateAnswerXXX" value="Anhvv"/>
+    </bean>
+    <bean name="id" class="java.lang.Long">
+        <constructor-arg value="27" name="value"/>
+    </bean>
+    <bean name="injectionSetter" class="com.higgsup.dependencies.InjectionSetter">
+        <property name="id" value="27"/>
+        <property name="name" value="Anhvv"/>
+    </bean>
+    <!--<bean name="dependencyA" class="com.higgsup.dependencies.DependencyA">-->
+    <!--<property name="dependencyB" ref="dependencyB"/>-->
+    <!--</bean>-->
+    <!--<bean name="dependencyB" class="com.higgsup.dependencies.DependencyB">-->
+    <!--<property name="dependencyA" ref="dependencyA"/>-->
+    <!--</bean>-->
+    <bean name="dependencyA" class="com.higgsup.dependencies.DependencyA" autowire-candidate="false" autowire="byType">
+        <!--<constructor-arg name="dependencyB" ref="dependencyB"/>-->
+    </bean>
+    <bean name="dependencyB" class="com.higgsup.dependencies.DependencyB" autowire="byName">
+        <!--<constructor-arg name="dependencyA" ref="dependencyA"/>-->
+    </bean>
+    <!--<context:annotation-config/>-->
+
+</beans>

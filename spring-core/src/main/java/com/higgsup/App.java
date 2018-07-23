@@ -18,5 +18,6 @@ public class App {
         System.out.println(context.getBean("clientServiceFactoryStatic"));
         System.out.println(context.getBean("defaultServiceLocator"));
         System.out.println(context.getBean("clientServiceFactoryInstance"));
+
     }
 }

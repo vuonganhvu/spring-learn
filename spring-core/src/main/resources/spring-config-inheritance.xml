@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean name="baseBeanDefinition" class="com.higgsup.inheritance.BaseBeanDefinition">
+        <property name="message1" value="baseBeanDefinition message 1"/>
+        <property name="message2" value="baseBeanDefinition message 2"/>
+    </bean>
+    <bean name="supperBeanDefinition" class="com.higgsup.inheritance.SupperBeanDefinition"
+          parent="baseBeanDefinition">
+        <property name="message1" value="supperBeanDefinition message 1"/>
+        <property name="message3" value="supperBeanDefinition message 3"/>
+    </bean>
+    <!--<bean name="abstractBeanDefinition" class="com.higgsup.inheritance.BaseBeanDefinition" abstract="true">-->
+    <!--<property name="message1" value="baseBeanDefinition message 1"/>-->
+    <!--<property name="message2" value="baseBeanDefinition message 2"/>-->
+    <!--</bean>-->
+</beans>

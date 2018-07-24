@@ -11,5 +11,5 @@
         <constructor-arg name="name" value="Bar"/>
     </bean>
     <bean name="anotherExampleBean" class="com.higgsup.custom.AnotherExampleBean"/>
-    <context:annotation-config/>
+    <bean name="customBeanAware" class="com.higgsup.custom.CustomBeanAware"/>
 </beans>

@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>spring-core</module>
+        <module>spring-web</module>
     </modules>
     <name>spring</name>
     <url>http://higgsup.com</url>

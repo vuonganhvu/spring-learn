@@ -17,7 +17,8 @@
     <url>http://higgsup.com</url>
 
     <properties>
-        <spring-verison>5.0.7.RELEASE</spring-verison>
+        <!--<spring-verison>5.0.7.RELEASE</spring-verison>-->
+        <spring-verison>4.3.19.RELEASE</spring-verison>
         <mysql-verison>8.0.11</mysql-verison>
     </properties>
 

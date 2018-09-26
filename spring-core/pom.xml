@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
@@ -11,7 +10,8 @@
     <artifactId>spring-core</artifactId>
     <name>spring-core</name>
     <properties>
-        <spring-verison>5.0.7.RELEASE</spring-verison>
+        <!--<spring-verison>5.0.7.RELEASE</spring-verison>-->
+        <spring-verison>4.3.19.RELEASE</spring-verison>
         <mysql-verison>8.0.11</mysql-verison>
     </properties>
     <dependencies>
